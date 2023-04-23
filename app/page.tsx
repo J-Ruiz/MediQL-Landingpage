@@ -1,12 +1,83 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
+import Link from 'next/link';
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+    <>
+      <header>
+        <nav className="flex justify-between px-20 py-10 items-end">
+          <div>
+            {/* add an image logo next to medical */}
+            <div className="text-3xl">MediQL</div>
+          </div>
+          <div className="flex text-2xl">
+            <div className="mr-5">
+              <Link href="/about"> About </Link>
+            </div>
+            <div>
+              <Link href="/contact-us"> Contact Us </Link>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      {/* when it gets bigger than x amount of pixels, it defaults to row! */}
+      <main className="flex flex-col lg:flex-row ">
+        <div className="flex-1 mt-14 ml-20 flex-col space-y-10">
+          <div className="text-5xl w-10/12">
+            Revolutionize Your GraphQL Development Workflow
+          </div>
+          <p className="text-xl w-10/12">
+            MediQL provides the perfect remedy to visualize GraphQL queries
+            through our intuitive and easy to use application!
+          </p>
+
+          <div>
+            <Link href="/learn-more">
+              <button className="text-2xl border-2 border-slate-400 p-5 rounded-xl w-9/12">
+                Learn how to use MediQL!
+              </button>
+            </Link>
+          </div>
+
+          <div>
+            <p className="text-xl">Already familiar with MediQL?</p>
+            <Link href="/port-input">
+              <button className="mt-3 text-2xl border-2 border-slate-400 p-5 rounded-xl w-9/12">
+                Click here to get started!
+              </button>
+            </Link>
+          </div>
+        </div>
+
+        <div className="flex-1 space-y-4 text-3xl mr-10 min-w-600 min-h-600 pl-20  lg:pl-1/2">
+          <div className=" min-w-full min-h-full ">
+            <Image
+              alt="animated picture of nodes connected with links"
+              src="/family-tree-g8a028763c_1280.jpg"
+              width={600}
+              height={600}
+            />
+            {/* <Image
+            alt="programmer image"
+            src="/fatos-bytyqi-Agx5_TLsIf4-unsplash.jpg"
+            width={650}
+            height={500}
+          /> */}
+
+            {/* <Image
+            alt="Visualizer with data nodes for GraphQL"
+            src="/tree-diagram-2-jpg.jpg"
+            width={500}
+            height={500}
+          /> */}
+          </div>
+        </div>
+
+        {/* <main className="flex min-h-screen flex-col items-center justify-between p-24">
+       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
           <code className="font-mono font-bold">app/page.tsx</code>
@@ -118,7 +189,8 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
-    </main>
-  )
+      </div> */}
+      </main>
+    </>
+  );
 }
