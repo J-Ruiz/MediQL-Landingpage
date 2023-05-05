@@ -1,8 +1,9 @@
-import './globals.css';
+import "./globals.css";
+import { GlobalContextProvider } from "../Context/store";
 
 export const metadata = {
-  title: 'MediQL',
-  description: 'A GraphQL Visualizer',
+  title: "MediQL",
+  description: "A GraphQL Visualizer",
 };
 
 export default function RootLayout({
@@ -11,8 +12,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <>
+      <html lang="en">
+        <body>
+          <GlobalContextProvider>{children}</GlobalContextProvider>
+        </body>
+      </html>
+    </>
   );
 }

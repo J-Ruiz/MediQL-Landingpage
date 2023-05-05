@@ -35,7 +35,7 @@ export default function Home() {
           </p>
 
           <div>
-            <Link href="/learn-more">
+            <Link href="/getting-started/overview">
               <button className="text-2xl border-2 border-slate-400 p-5 rounded-xl w-9/12">
                 Learn how to use MediQL!
               </button>
