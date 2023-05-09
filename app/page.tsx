@@ -7,13 +7,13 @@ export default function Home() {
   return (
     <>
       <header>
-        <nav className="flex justify-between px-20 py-10 items-end bg-gradient-to-r from-sky-500 via-sky-700 to-sky-950">
+        <nav className="text-slate-200 flex justify-between bg-slate-900 pt-6 pb-6">
           <div>
             {/* add an image logo next to medical */}
-            <div className="text-3xl">MediQL</div>
+            <div className="text-xl pl-4">MediQL</div>
           </div>
-          <div className="flex text-2xl">
-            <div className="mr-5">
+          <div className="flex space-x-4 pr-4 text-xl">
+            <div className="">
               <Link href="/about"> About </Link>
             </div>
             <div>
@@ -24,72 +24,69 @@ export default function Home() {
       </header>
 
       {/* when it gets bigger than x amount of pixels, it defaults to row! */}
-      <main className="flex justify-center items-center bg-gradient-to-r from-sky-900 via-fuchsia-200 to-sky-900 p-20 m-10 rounded-xl text-black">
-        <div className="flex max-w-7xl p-10">
-          <div className="flex-1 flex flex-col justify-center items-start space-y-7">
-            <div className="text-5xl">
+      <main>
+        <div className="flex flex-col lg:flex-row bg-slate-950 space-y-32 pb-10 pt-40 pl-4 pr-4 lg:pt-12 lg:pb-20 lg:pl-40 lg:pr-40">
+          <div className="text-3xl text-gray-200 flex flex-col lg:flex-1 lg:justify-center lg:p-40">
+            <div className="text-center lg:text-start">
               Revolutionize Your GraphQL Development Workflow
             </div>
-            <p className="text-xl">
-              <span className="text-pink-400">MediQL</span> provides the perfect
-              remedy to visualize GraphQL queries through our intuitive and easy
-              to use application!
-            </p>
+            <div className="text-center lg:text-start">
+              <span className="text-pink-400">MediQL </span>
+              provides the perfect remedy to visualize GraphQL queries through
+              our intuitive and easy to use application!
+            </div>
 
-            <div className="w-full">
+            <div className="w-full flex justify-center  lg:justify-start mt-10">
               <Link href="/port-input">
-                <button className="text-2xl border-4 border-fuchsia-100 rounded-xl p-10 w-4/5 bg-transparent text-sky-900 hover:bg-fuchsia-200 transition">
+                <button className="text-2xl text-gray-200 p-10 border-4 border-fuchsia-100 rounded-xl bg-transparent  hover:bg-pink-400 transition">
                   Click here to get started!
                 </button>
               </Link>
             </div>
           </div>
 
-          {/* <div className="flex-1 space-y-4 text-3xl mr-10 pl-20 pt-16"> */}
-          {/* <div className=" min-w-full min-h-full "> */}
-          <div className="flex-1 flex justify-center items-center">
-            <Image
-              className="rounded-3xl"
+          <div className="flex lg:flex-1 ">
+            <img
+              className="rounded-3xl object-cover max-w-100 max-w-80 lg:w-4/5 lg:h-4/5"
               alt="animated picture of nodes connected with links"
               src="/danial-igdery-FCHlYvR5gJI-unsplash.jpg"
-              width={900}
-              height={800}
             />
           </div>
         </div>
       </main>
-      <section className="m-10 rounded-xl pb-40 text-black bg-gray-100">
-        <div className="flex justify-center items-center p-20 text-5xl font-bold">
+
+      <section className="pt-14 bg-slate-900">
+        <div className="text-slate-100 flex justify-center items-center text-5xl font-bold">
           Meet the Team
         </div>
-        <div className="flex">
-          <div className="flex-1 flex flex-col justify-center items-center">
+        <div className="text-slate-100 flex flex-col lg:flex-row justify-center items-center mt-10 pb-10 space-y-12 lg:space-y-0 lg:space-x-32 ">
+          <div className="flex flex-col justify-center items-center space-y-6">
             <img
-              className="rounded-3xl h-60 w-60 object-cover"
+              className="rounded-3xl h-80 w-80 object-cover"
               src="/Lily.JPG"
             />
-            <div>Lily Hoong</div>
+            <div className="text-xl">Lily Hoong</div>
           </div>
-          <div className="flex-1 flex flex-col  justify-center items-center">
+          <div className="flex flex-col justify-center items-center space-y-6">
             <img
-              className="rounded-3xl h-60 w-60 object-cover"
+              className="rounded-3xl h-80 w-80 object-cover"
               src="/jake2_2328.jpg"
             />
-            <div>Jake Ruiz</div>
+            <div className="text-xl">Jake Ruiz</div>
           </div>
-          <div className="flex-1 flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center space-y-6">
             <img
-              className="rounded-3xl h-60 w-60 object-cover"
+              className="rounded-3xl h-80 w-80 object-cover"
               src="/noah.jpg"
             />
-            <div>Noah Tofte</div>
+            <div className="text-xl">Noah Tofte</div>
           </div>
-          <div className="flex-1 flex flex-col  justify-center items-center">
+          <div className="flex flex-col justify-center items-center space-y-6">
             <img
-              className="rounded-3xl h-60 w-60 object-cover"
+              className="rounded-3xl h-80 w-80 object-cover"
               src="/james.jpg"
             />
-            <div>James Huang</div>
+            <div className="text-xl">James Huang</div>
           </div>
         </div>
       </section>
