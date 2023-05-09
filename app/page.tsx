@@ -26,18 +26,18 @@ export default function Home() {
       {/* when it gets bigger than x amount of pixels, it defaults to row! */}
       <main>
         <div className="flex flex-col lg:flex-row bg-slate-950 space-y-32 pb-10 pt-40 pl-4 pr-4 lg:pt-12 lg:pb-20 lg:pl-40 lg:pr-40">
-          <div className="text-3xl text-gray-200 flex flex-col lg:flex-1 lg:justify-center lg:p-40">
-            <div className="text-center lg:text-start">
+          <div className="text-gray-200 flex flex-col space-y-10 lg:flex-1 lg:justify-center lg:p-40">
+            <div className="text-4xl lg:text-5xl text-center lg:text-start">
               Revolutionize Your GraphQL Development Workflow
             </div>
-            <div className="text-center lg:text-start">
+            <div className="text-xl lg:text-2xl text-center lg:text-start">
               <span className="text-pink-400">MediQL </span>
               provides the perfect remedy to visualize GraphQL queries through
               our intuitive and easy to use application!
             </div>
 
-            <div className="w-full flex justify-center  lg:justify-start mt-10">
-              <Link href="/port-input">
+            <div className="w-full flex justify-center lg:justify-start">
+              <Link href="https://github.com/oslabs-beta/MediQL">
                 <button className="text-2xl text-gray-200 p-10 border-4 border-fuchsia-100 rounded-xl bg-transparent  hover:bg-pink-400 transition">
                   Click here to get started!
                 </button>
