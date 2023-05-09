@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <header>
-        <nav className="flex justify-between px-20 py-10 items-end">
+        <nav className="flex justify-between px-20 py-10 items-end bg-gradient-to-r from-sky-500 via-sky-700 to-sky-950">
           <div>
             {/* add an image logo next to medical */}
             <div className="text-3xl">MediQL</div>
@@ -24,59 +24,108 @@ export default function Home() {
       </header>
 
       {/* when it gets bigger than x amount of pixels, it defaults to row! */}
-      <main className="flex flex-col lg:flex-row ">
-        <div className="flex-1 mt-14 ml-20 flex-col space-y-10">
-          <div className="text-5xl w-10/12">
-            Revolutionize Your GraphQL Development Workflow
-          </div>
-          <p className="text-xl w-10/12">
-            MediQL provides the perfect remedy to visualize GraphQL queries
-            through our intuitive and easy to use application!
-          </p>
+      <main className="flex justify-center items-center bg-gradient-to-r from-sky-900 via-fuchsia-200 to-sky-900 p-20 m-10 rounded-xl text-black">
+        <div className="flex max-w-7xl p-10">
+          <div className="flex-1 flex flex-col justify-center items-start space-y-7">
+            <div className="text-5xl">
+              Revolutionize Your GraphQL Development Workflow
+            </div>
+            <p className="text-xl">
+              <span className="text-pink-400">MediQL</span> provides the perfect
+              remedy to visualize GraphQL queries through our intuitive and easy
+              to use application!
+            </p>
 
-          <div>
-            <Link href="/getting-started/overview">
-              <button className="text-2xl border-2 border-slate-400 p-5 rounded-xl w-9/12">
-                Learn how to use MediQL!
-              </button>
-            </Link>
+            <div className="w-full">
+              <Link href="/port-input">
+                <button className="text-2xl border-4 border-fuchsia-100 rounded-xl p-10 w-4/5 bg-transparent text-sky-900 hover:bg-fuchsia-200 transition">
+                  Click here to get started!
+                </button>
+              </Link>
+            </div>
           </div>
 
-          <div>
-            <p className="text-xl">Already familiar with MediQL?</p>
-            <Link href="/port-input">
-              <button className="mt-3 text-2xl border-2 border-slate-400 p-5 rounded-xl w-9/12">
-                Click here to get started!
-              </button>
-            </Link>
+          {/* <div className="flex-1 space-y-4 text-3xl mr-10 pl-20 pt-16"> */}
+          {/* <div className=" min-w-full min-h-full "> */}
+          <div className="flex-1 flex justify-center items-center">
+            <Image
+              className="rounded-3xl"
+              alt="animated picture of nodes connected with links"
+              src="/danial-igdery-FCHlYvR5gJI-unsplash.jpg"
+              width={900}
+              height={800}
+            />
           </div>
         </div>
-
-        <div className="flex-1 space-y-4 text-3xl mr-10 min-w-600 min-h-600 pl-20  lg:pl-1/2">
-          <div className=" min-w-full min-h-full ">
-            <Image
-              alt="animated picture of nodes connected with links"
-              src="/family-tree-g8a028763c_1280.jpg"
-              width={600}
-              height={600}
+      </main>
+      <section className="m-10 rounded-xl pb-40 text-black bg-gray-100">
+        <div className="flex justify-center items-center p-20 text-5xl font-bold">
+          Meet the Team
+        </div>
+        <div className="flex">
+          <div className="flex-1 flex flex-col justify-center items-center">
+            <img
+              className="rounded-3xl h-60 w-60 object-cover"
+              src="/Lily.JPG"
             />
-            {/* <Image
+            <div>Lily Hoong</div>
+          </div>
+          <div className="flex-1 flex flex-col  justify-center items-center">
+            <img
+              className="rounded-3xl h-60 w-60 object-cover"
+              src="/jake2_2328.jpg"
+            />
+            <div>Jake Ruiz</div>
+          </div>
+          <div className="flex-1 flex flex-col justify-center items-center">
+            <img
+              className="rounded-3xl h-60 w-60 object-cover"
+              src="/noah.jpg"
+            />
+            <div>Noah Tofte</div>
+          </div>
+          <div className="flex-1 flex flex-col  justify-center items-center">
+            <img
+              className="rounded-3xl h-60 w-60 object-cover"
+              src="/james.jpg"
+            />
+            <div>James Huang</div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div></div>
+      </footer>
+    </>
+  );
+}
+
+{
+  /* <Image
             alt="programmer image"
             src="/fatos-bytyqi-Agx5_TLsIf4-unsplash.jpg"
             width={650}
             height={500}
-          /> */}
+          /> */
+}
 
-            {/* <Image
+{
+  /* <Image
             alt="Visualizer with data nodes for GraphQL"
             src="/tree-diagram-2-jpg.jpg"
             width={500}
             height={500}
-          /> */}
-          </div>
-        </div>
+          /> */
+}
+{
+  /* </div> */
+}
+{
+  /* </div> */
+}
 
-        {/* <main className="flex min-h-screen flex-col items-center justify-between p-24">
+{
+  /* <main className="flex min-h-screen flex-col items-center justify-between p-24">
        <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
@@ -189,8 +238,5 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div> */}
-      </main>
-    </>
-  );
+      </div> */
 }
