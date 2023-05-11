@@ -20,14 +20,14 @@ export default function Home() {
           </div>
           <div className="flex justify-center items-center space-x-4 pr-4 lg:pr-8 text-xl">
             <div className="">
-              <Link href="/about">
+              <Link href="https://medium.com/@noahtofte/364ff07bed34">
                 {' '}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="30"
                   fill="currentColor"
-                  className="bi bi-medium"
+                  className="bi bi-medium hover:bg-slate-700 hover:rounded-xl"
                   viewBox="0 0 16 16"
                 >
                   <path d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8zm4.95 0c0 2.34-1.01 4.236-2.256 4.236-1.246 0-2.256-1.897-2.256-4.236 0-2.34 1.01-4.236 2.256-4.236 1.246 0 2.256 1.897 2.256 4.236zM16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795z" />
@@ -70,7 +70,44 @@ export default function Home() {
         </div>
       </main>
 
-      <section className="pt-14 bg-slate-900">
+      <section className="bg-slate-900">
+        <div className="flex justify-center px-8 pt-16 lg:justify-normal items-center">
+          <div className="text-slate-300 text-4xl ">
+            Get proper REST and get{' '}
+            <span className="text-pink-400">MediQL</span>
+          </div>
+        </div>
+        <div className="flex flex-col lg:flex-row space-y-28 lg:space-y-0 lg:space-x-20 px-8 py-20 text-slate-300">
+          <div className="flex flex-1 flex-col bg-slate-800 px-4 py-8 space-y-4 border-2 border-slate-400 opacity-90">
+            <div className="text-2xl text-pink-400">Error Transparency</div>
+            <div>
+              MediQL enhances GraphQL queries and gets the true error message
+              sent with each response. Bypass stale and unclear error messages
+              by using our unique application.
+            </div>
+          </div>
+          <div className="flex flex-1 flex-col bg-slate-800 px-4 py-8 space-y-4 border-2 border-slate-400 opacity-90">
+            <div className="text-2xl text-pink-400">
+              Query Response Visualization
+            </div>
+            <div>
+              Visualize in style with D3.JS. Click on the color coded nodes in
+              your visualized GraphQL query and gather further information and
+              enhance your development experience.
+            </div>
+          </div>
+          <div className="flex flex-1 flex-col bg-slate-800 px-4 py-8 space-y-4 border-2 border-slate-400 opacity-90">
+            <div className="text-2xl text-pink-400">Original API Response </div>
+            <div>
+              Click on red nodes to view the original error response and the
+              error object message without adding layers of abstraction. No
+              longer will you be perplexed by the dreaded GraphQL Status 200 OK!
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-14 bg-slate-950">
         <div className="text-slate-100 flex justify-center items-center text-5xl font-bold">
           Meet the Team
         </div>
@@ -90,7 +127,7 @@ export default function Home() {
                     width="30"
                     height="30"
                     fill="currentColor"
-                    className="bi bi-github"
+                    className="bi bi-github hover:bg-slate-800 hover:rounded-xl"
                     viewBox="0 0 16 16"
                   >
                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
@@ -103,7 +140,7 @@ export default function Home() {
                     width="24"
                     height="24"
                     fill="currentColor"
-                    className="bi bi-linkedin"
+                    className="bi bi-linkedin hover:bg-slate-600 hover:rounded-l"
                     viewBox="0 0 16 16"
                   >
                     <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
@@ -127,7 +164,7 @@ export default function Home() {
                     width="30"
                     height="30"
                     fill="currentColor"
-                    className="bi bi-github"
+                    className="bi bi-github hover:bg-slate-800 hover:rounded-xl"
                     viewBox="0 0 16 16"
                   >
                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
@@ -140,7 +177,7 @@ export default function Home() {
                     width="24"
                     height="24"
                     fill="currentColor"
-                    className="bi bi-linkedin"
+                    className="bi bi-linkedin hover:bg-slate-600 hover:rounded-l"
                     viewBox="0 0 16 16"
                   >
                     <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
@@ -164,7 +201,7 @@ export default function Home() {
                     width="30"
                     height="30"
                     fill="currentColor"
-                    className="bi bi-github"
+                    className="bi bi-github hover:bg-slate-800 hover:rounded-xl"
                     viewBox="0 0 16 16"
                   >
                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
@@ -177,7 +214,7 @@ export default function Home() {
                     width="24"
                     height="24"
                     fill="currentColor"
-                    className="bi bi-linkedin"
+                    className="bi bi-linkedin hover:bg-slate-600 hover:rounded-l"
                     viewBox="0 0 16 16"
                   >
                     <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
@@ -202,7 +239,7 @@ export default function Home() {
                     width="30"
                     height="30"
                     fill="currentColor"
-                    className="bi bi-github"
+                    className="bi bi-github hover:bg-slate-800 hover:rounded-xl"
                     viewBox="0 0 16 16"
                   >
                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
@@ -215,7 +252,7 @@ export default function Home() {
                     width="24"
                     height="24"
                     fill="currentColor"
-                    className="bi bi-linkedin"
+                    className="bi bi-linkedin hover:bg-slate-600 hover:rounded-l"
                     viewBox="0 0 16 16"
                   >
                     <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
