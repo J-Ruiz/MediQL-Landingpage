@@ -1,5 +1,4 @@
 import './globals.css';
-// import { GlobalContextProvider } from "../Context/store";
 
 export const metadata = {
   title: 'MediQL',
@@ -14,10 +13,7 @@ export default function RootLayout({
   return (
     <>
       <html lang="en">
-        <body>
-          {children}
-          {/* <GlobalContextProvider>{children}</GlobalContextProvider> */}
-        </body>
+        <body>{children}</body>
       </html>
     </>
   );
