@@ -12,11 +12,11 @@ export default function Home() {
           <div className="flex justify-center items-center pl-4 lg:pl-8">
             {/* add an image logo next to medical */}
             <img
-              className="rounded-3xl h-10 w-10 object-cover"
+              className="rounded-l h-10 w-10 object-cover mr-2"
               alt="animated picture of nodes connected with links"
               src="/MediQL_NoBuffer.png"
             />
-            <div className="text-xl text-[#FE48BD]">MediQL</div>
+            <div className="text-xl text-[#FE48BD] font-bold">MediQL</div>
           </div>
           <div className="flex justify-center items-center space-x-4 pr-4 lg:pr-8 text-xl">
             <div className="">
