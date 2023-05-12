@@ -15,7 +15,7 @@ const Header = () => {
         </div>
         <div className="flex justify-center items-center space-x-4 pr-4 lg:pr-8 text-xl">
           <div className="">
-            <Link href="https://medium.com/@noahtofte/364ff07bed34">
+            <Link href="https://medium.com/@noahtofte/introducing-mediql-364ff07bed34">
               {' '}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
